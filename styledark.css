@@ -1,0 +1,304 @@
+* {
+    scroll-behavior: smooth;
+    
+  }
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  @keyframes slideInFromLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+  }
+  @keyframes slideInFromRight{
+    0% { transform: translateX(+100%); }
+    100% { transform: translateX(0); }
+  }
+  
+  
+  
+  .introtext {
+    animation: slideInFromLeft 1s ease;
+  }
+  
+  h2:hover {
+    animation: bounce 0.5s ease infinite;
+  }
+  
+  .resume
+  {
+    color:#d88d15;
+  }
+  
+  .profilepicture {
+    animation: slideInFromRight 1s ease ;
+  }
+  
+  .container
+  {
+   animation: bounce 0.5s ease ;
+  
+  }
+  
+  body {
+    font-family: cursive;
+    color: rgb(246, 243, 240);
+    
+
+    /*  */
+    
+    margin: 0;
+    padding: 0;
+    transition:background-color 0.5s ease, color 0.5s ease ;
+  }
+  .container
+{
+  margin-top: 0;
+  display: flex;
+
+
+  width: 100%;
+  height: 10hv;
+  background :rgb(30, 30, 30);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+ 
+
+}
+  
+ 
+  
+  .introtext {
+    font-size: 1.5em;
+  }
+  
+  .intro2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+  .moon
+  {
+  float:right;
+  padding: 20px;
+  width: 40px;
+  cursor: pointer;
+  
+  }
+  
+  
+  
+  
+  nav {
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  
+    background-color:rgb(42, 42, 38);
+  
+  }
+  
+  nav ul {
+  
+    padding: 0.5%;
+    margin: 0%;
+    font-size: 250%;
+  
+  }
+  
+  nav ul li {
+    display: inline;
+  
+  }
+  
+  nav ul li a {
+  
+    padding: 0.4% 2%;
+    color: #deaf56;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: #839459;
+    padding-top: 3px
+  }
+  
+  nav ul li a:active {
+    background-color: #ae9f7d;
+  }
+  
+  .aboutme {
+    font-size: 1.5em;
+  }
+  
+  .educate {
+    font-size: 1.5em;
+  }
+  
+  .myedu {
+    display: grid;
+    font-size: 1.5em;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    font-size: 20px;
+  
+  
+  
+  
+  
+  
+  }
+  
+  .myedu>div {
+    border-radius: 20px;
+   
+  }
+  
+  .edutable {
+    border: 3px;
+    width: 100%;
+  
+  
+  
+  }
+  
+  .skillsclass {
+    border: 1px solid #d3ba74;
+ 
+    border-radius: 5px;
+ 
+    box-shadow: 2px 2px 5px rgb(188, 175, 149);
+  
+  
+    padding: 2%;
+  
+  }
+  
+  .skillsclass :hover {
+    background-color: #78571f;
+    /* Change background color on hover */
+    color: #e0d4e0;
+    /* Change text color on hover */
+  }
+  
+  
+  .edutable td,
+  .edutable th {
+    border: 2px solid #fcfcfb;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .edutable tr:nth-child(even) {
+    background-color: #e9c288;
+  }
+  
+  .primary,
+  .middleschool,
+  .Undergraduate {
+    background-color: rgba(255, 115, 1, 0.8);
+  
+  
+  
+  
+  }
+  
+  .preprimary,
+  .secondary,
+  .seniorsecondary {
+    background-color: rgba(226, 191, 116, 0.8);
+  
+  
+  
+  
+  }
+  
+  
+  .primary:hover {
+    background-color: rgb(242, 193, 17);
+  
+  }
+  
+  .middleschool:hover {
+    background-color: rgb(242, 193, 17);
+  }
+  
+  .Undergraduate:hover {
+    background-color:  rgb(242, 193, 17);
+  }
+  
+  .preprimary:hover {
+    background-color: rgb(233, 233, 106);
+  }
+  
+  .secondary:hover {
+    background-color: rgb(233, 233, 106);
+  }
+  
+  .seniorsecondary:hover {
+    background-color: rgb(233, 233, 106);
+  }
+  
+  .achievementstable {
+    padding: 0%;
+  
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+  
+  
+  }
+  .blog
+  {
+    color: #ce9944;
+  }
+  .invert {
+    filter: invert(100%);
+}
+  
+  .achievementstable :nth-child(even) {
+    background-color:  rgba(226, 191, 116, 0.8);
+  
+  }
+  
+  .achievementstable th {
+    background-color: rgb(221, 82, 12);
+  
+  
+  
+  }
+  
+  .achievementstable tr:nth-child(odd) {
+    background-color:  rgba(255, 115, 1, 0.8);
+  }
+  
+  .achievementstable th,
+  .achievementstable td {
+    border-radius: 30px;
+    padding: 2%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  div {
+    padding: 0.5%;
+    background-color: #1e1e1e;
+  
+  
+  
+   
+  }
+
+  
+  h2 {
+    color: #d88d15;
+    padding-top: 4%;
+  }
